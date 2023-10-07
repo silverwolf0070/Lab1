@@ -11,7 +11,7 @@ int main(){
 		for(double y=-0.4; y<=-0.2; y+=0.1){//В документации по всей видимости ошибка, тк -0.2>-0.4
 			for(double z =0.5;z<=1.5; z+=0.8){
 				double ufun = u(x,y,z);
-				printf("x=%f, y=%f, z=%f, u=%f\n", x,y,z,ufun);
+				printf("x=%f, y=%f, z=%f, u(x,y,z)=%f\n", x,y,z,ufun);
 				if(ufun > maxVal){
 					maxVal = ufun;
 					maxX=x;
