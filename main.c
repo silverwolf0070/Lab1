@@ -2,7 +2,7 @@
 #include <math.h>
 
 double u(double x,double  y, double z){
-	return (- sqrt(pow(y,2)+4*x*x/3)+ (sin(pow(x,3) - y) - fabs(x*y))/ z);
+	return (- sqrt(pow(y,2)+(4*x*x)/3)+ (sin(pow(x,3) - y) - fabs(x*y))/(x*z));
 }
 
 int main(){
