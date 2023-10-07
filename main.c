@@ -8,7 +8,7 @@ double u(double x,double  y, double z){
 int main(){
 	double maxVal = 0, maxX=0,maxY=0,maxZ=0;
 	for(double x=1; x<=3; x+=1.3){
-		for(double y=-0.4; y<=-0.2; y+=0.1){//В документации по всей видимости ошибка, тк -0.2>-0.4, либо шаг должен быть отрицательным
+		for(double y=-0.4; y<=-0.2; y+=0.1){//В документации по всей видимости ошибка, тк -0.2>-0.4
 			for(double z =0.5;z<=1.5; z+=0.8){
 				double ufun = u(x,y,z);
 				printf("x=%f, y=%f, z=%f, u=%f\n", x,y,z,ufun);
